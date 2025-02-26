@@ -33,7 +33,6 @@ int main() {
         return 1;
     }
     
-    // Se o arquivo não terminar com nova linha, ainda conta como uma linha
     if (bytes > 0 && buf[bytes-1] != '\n') {
         linhas++;
     }
