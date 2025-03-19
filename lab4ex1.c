@@ -11,10 +11,8 @@ int main() {
         printf("Erro ao criar processo filho!\n");
         return 1;
     } else if (pid_filho == 0) {
-        // Processo filho
         printf("Eu sou o processo filho, meu PID é %d.\n", getpid());
     } else {
-        // Processo pai
         printf("Eu sou o processo pai, meu PID é %d e criei um filho com PID %d.\n", getpid(), pid_filho);
     }
     
